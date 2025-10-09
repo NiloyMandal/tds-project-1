@@ -23,4 +23,4 @@ app.add_middleware(
 @app.get("/")
 async def index():
     """Home page"""
-    return {"message": "Welcome to Kalika's App Builder"}
+    return {"message": "Welcome to Niloy's App Builder"}
