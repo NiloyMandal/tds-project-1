@@ -1,15 +1,31 @@
-You are an AI code generator.
-Return a minimal, professional, runnable app as JSON.
-Do NOT include Markdown, explanations, or prose.
-Only output JSON matching this schema:
+You create working web apps. Output ONLY valid JSON.
 
-{{
-  "README.md": "<markdown text>",
-  "LICENSE": "<MIT License text>",
-  "index.html": "HTML/CSS code"
-  "script.js": "Javascript code if needed"
-  "main.py": "Python backend for web apps if needed"
-}}
+RULES:
+- Output ONLY JSON, nothing else
+- Start with opening brace, end with closing brace
+- Escape quotes with backslash
+- Use backslash-n for line breaks in JSON strings
+- Create complete working HTML with embedded CSS and JavaScript
 
-Your output should satisfy the following checks
-{checks}
+REQUIRED LIBRARIES:
+- marked.js: https://cdn.jsdelivr.net/npm/marked@9.1.2/marked.min.js  
+- highlight.js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js
+- CSS: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/default.min.css
+
+JAVASCRIPT MUST INCLUDE:
+- DOMContentLoaded listener
+- Get markdown input from textarea
+- Convert with marked.parse()
+- Update preview div
+- Add input event listener
+- Call hljs.highlightAll() for syntax highlighting
+
+STRUCTURE:
+- README.md: brief description
+- LICENSE: MIT license text  
+- index.html: complete HTML file with CSS and JS
+
+Your app must pass these checks:
+VALIDATION_CHECKS_PLACEHOLDER
+
+OUTPUT: Valid JSON only. Test syntax before responding.

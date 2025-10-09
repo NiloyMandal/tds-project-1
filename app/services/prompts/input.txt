@@ -1,7 +1,26 @@
-App brief:
-{brief}
+BUILD THIS APPLICATION:
+BUILD_BRIEF_PLACEHOLDER
 
-Requirements:
-- The final application must run directly out of the box with no third-party installation required. This is very important
-- README.md must include summary, setup, usage, and license section.
-- LICENSE must be MIT.
+REQUIREMENTS:
+- Must work when opened in browser
+- No server setup needed
+- Use CDN for external libraries
+- Professional responsive design
+- All functionality must work
+- No placeholder code
+- Complete error handling
+- All features from brief implemented
+
+DOCUMENTATION REQUIREMENTS:
+- README.md must include: summary, features, setup instructions, usage guide, and MIT license info
+- Include screenshots or demo descriptions in README
+- Provide troubleshooting section if applicable
+- LICENSE must be standard MIT license text
+
+TECHNICAL STANDARDS:
+- Use modern web standards (HTML5, CSS3, ES6+)
+- Implement responsive design (mobile-first approach)
+- Add proper meta tags for SEO and social sharing
+- Include favicon and app icons
+- Validate all user inputs
+- Handle edge cases and error scenarios gracefully
