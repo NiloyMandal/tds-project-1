@@ -1,0 +1,17 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "markdown-to-html-ab12",
+  "round": 1,
+  "nonce": "ab12",
+  "brief": "Publish a static page that converts input.md from attachments to HTML with marked, renders it inside #markdown-output, and loads highlight.js for code blocks.",
+  "checks": [
+    "!!document.querySelector(\"script[src*='marked']\")",
+    "!!document.querySelector(\"script[src*='highlight.js']\")",
+    "document.querySelector(\"#markdown-output\").innerHTML.includes(\"<h\")"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": [
+    { "name": "input.md", "url": "data:text/markdown;base64,IyBNYXJrZG93biB0byBIVE1MLQoKVGhpcyBpcyBhIHNhbXBsZSBtYXJrZG93biBkb2N1bWVudC4KCiMjIyBDb2RlCgpgYGBqcwpjb25zb2xlLmxvZygnSGVsbG8gY29kZScpOwpgYGA=" }
+  ]
+}
