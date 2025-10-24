@@ -1,0 +1,20 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "sum-of-sales-test-001",
+  "round": 1,
+  "nonce": "test-nonce-001",
+  "brief": "Publish a single-page site whose title is 'Sales Summary 2025'. It should use fetch() to load sales.csv (provided in the attachments), dynamically sum the 'sales' column, and display the total inside an id='total-sales' element, rounded to 2 decimals.",
+  "checks": [
+    "document.title === 'Sales Summary 2025'",
+    "!!document.querySelector('#total-sales')",
+    "!!document.querySelector('script').textContent.includes('fetch')"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": [
+    {
+      "name": "sales.csv",
+      "url": "data:text/csv;base64,cHJvZHVjdCxzYWxlcwpMYXB0b3AsMTUwMC41MApQaG9uZSw4OTkuOTkKVGFibGV0LDQ1MC4wMApNb25pdG9yLDI1MC4wMApLZXlib2FyZCw3NS4wMA=="
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "todo-list-test-003",
+  "round": 1,
+  "nonce": "test-nonce-003",
+  "brief": "Build a to-do list app where users can add tasks via an input field with id='task-input', add button with id='add-btn', and display tasks in a list with id='task-list'. Each task should have a delete button. Use Bootstrap for styling.",
+  "checks": [
+    "!!document.querySelector('#task-input')",
+    "!!document.querySelector('#add-btn')",
+    "!!document.querySelector('#task-list')",
+    "!!document.querySelector('link[href*=\"bootstrap\"]')"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": []
+}

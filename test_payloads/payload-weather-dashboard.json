@@ -1,0 +1,15 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "weather-dashboard-test-004",
+  "round": 1,
+  "nonce": "test-nonce-004",
+  "brief": "Create a weather dashboard that displays current conditions. Include a search input with id='city-search', a search button, and display area with id='weather-display' showing temperature, conditions, and city name. Use Bootstrap styling.",
+  "checks": [
+    "!!document.querySelector('#city-search')",
+    "!!document.querySelector('#weather-display')",
+    "!!document.querySelector('link[href*=\"bootstrap\"]')"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": []
+}

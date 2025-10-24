@@ -16,10 +16,7 @@ JSON OUTPUT RULES:
 - Do NOT add extra fields beyond README.md, LICENSE, and index.html
 - The index.html must be a complete, self-contained HTML file
 
-REQUIRED LIBRARIES (include in index.html):
-- marked.js: https://cdn.jsdelivr.net/npm/marked@9.1.2/marked.min.js
-- highlight.js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js
-- highlight.js CSS: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/default.min.css
+IMPORTANT: Create an application that matches the brief exactly. Only include libraries that are actually needed for the specific task. Do NOT include unnecessary libraries.
 
 Your app must pass these validation checks:
 {checks}

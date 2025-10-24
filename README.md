@@ -138,8 +138,7 @@ TDS_Project_1/
     ├── 🛣️ routes.py             # API route handlers
     ├── 🔧 helpers.py           # Utility functions
     └── 🏢 services/            # Business logic services
-        ├── 🤖 llm.py           # aipipe LLM integration
-        ├── 🎭 llm_mock.py      # Mock LLM for testing
+  ├── 🤖 llm.py           # aipipe LLM integration (no mock fallback)
         ├── 🐙 gh_actions.py    # GitHub integration
         └── 📝 prompts/         # LLM prompt templates
             ├── input.txt

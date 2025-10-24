@@ -1,0 +1,20 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "markdown-editor-test-007",
+  "round": 2,
+  "nonce": "test-nonce-007",
+  "brief": "Enhance the markdown converter with tabs id='markdown-tabs' that switch between rendered HTML in id='markdown-output' and the original Markdown in id='markdown-source'. Add a live word count badge id='markdown-word-count' that updates after every render.",
+  "checks": [
+    "document.querySelectorAll('#markdown-tabs button').length >= 2",
+    "!!document.querySelector('#markdown-source')",
+    "!!document.querySelector('#markdown-word-count')"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": [
+    {
+      "name": "input.md",
+      "url": "data:text/markdown;base64,IyBNYXJrZG93biBFZGl0b3IKClRoaXMgaXMgYSBzYW1wbGUgZG9jdW1lbnQgd2l0aCBtdWx0aXBsZSBmZWF0dXJlcy4KCiMjIEZlYXR1cmVzCi0gTGl2ZSBwcmV2aWV3Ci0gU3ludGF4IGhpZ2hsaWdodGluZwotIFdvcmQgY291bnQKCiMjIyBDb2RlIEV4YW1wbGUKCmBgYGphdmFzY3JpcHQKY29uc3QgZ3JlZXQgPSAobmFtZSkgPT4gewogIGNvbnNvbGUubG9nKGBIZWxsbywgJHtuYW1lfSFgKTsKfTsKYGBg"
+    }
+  ]
+}

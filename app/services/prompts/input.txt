@@ -1,12 +1,15 @@
 Generate a complete web application based on this brief:
 {brief}
 
+CRITICAL: The application must do EXACTLY what the brief describes. Do not add unrelated features.
+
 REQUIREMENTS:
 1. README.md must include:
-   - Project title and description
-   - Features list
+   - Project title based on the brief
+   - Description of what the app does
+   - Features list specific to this app
    - Setup/usage instructions
-   - Libraries used
+   - Any libraries used
    
 2. LICENSE must contain:
    - Complete MIT License text
@@ -16,7 +19,10 @@ REQUIREMENTS:
    - Complete HTML structure (<!DOCTYPE html>, <html>, <head>, <body>)
    - All CSS embedded in <style> tags
    - All JavaScript embedded in <script> tags
-   - Required CDN libraries loaded
+   - Only load CDN libraries that are actually needed for this specific app
    - Must work as a standalone file (no external dependencies except CDNs)
+   - Professional, clean design
 
-IMPORTANT: Return ONLY the JSON object with exactly 3 fields: "README.md", "LICENSE", and "index.html"
+IMPORTANT: 
+- Return ONLY the JSON object with exactly 3 fields: "README.md", "LICENSE", and "index.html"
+- The app must match the brief exactly - do not create a markdown converter unless that's what the brief asks for

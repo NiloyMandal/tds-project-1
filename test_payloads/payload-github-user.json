@@ -1,0 +1,15 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "github-user-lookup-test-006",
+  "round": 1,
+  "nonce": "test-nonce-006",
+  "brief": "Publish a Bootstrap page with form id='github-user-form' that fetches a GitHub username using the GitHub API, and displays the account creation date in YYYY-MM-DD UTC inside id='github-created-at'. Include error handling.",
+  "checks": [
+    "document.querySelector('#github-user-form').tagName === 'FORM'",
+    "!!document.querySelector('#github-created-at')",
+    "!!document.querySelector('script').textContent.includes('https://api.github.com/users/')"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": []
+}

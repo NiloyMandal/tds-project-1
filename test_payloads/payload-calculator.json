@@ -1,0 +1,15 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "calculator-app-test-002",
+  "round": 1,
+  "nonce": "test-nonce-002",
+  "brief": "Create a calculator web app with basic math operations (+, -, *, /). Include a display screen with id='display', number buttons (0-9), operation buttons, and an equals button. Style it professionally.",
+  "checks": [
+    "!!document.querySelector('#display')",
+    "document.querySelectorAll('button').length >= 10",
+    "!!document.querySelector('button').textContent.match(/[0-9]/)"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": []
+}

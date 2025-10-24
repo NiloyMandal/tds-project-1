@@ -1,0 +1,20 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "json-viewer-test-005",
+  "round": 1,
+  "nonce": "test-nonce-005",
+  "brief": "Create a JSON viewer that loads data.json from attachments and displays it in a formatted, collapsible tree view inside id='json-output'. Include syntax highlighting. Add a search input with id='json-search' to filter properties.",
+  "checks": [
+    "!!document.querySelector('#json-output')",
+    "!!document.querySelector('#json-search')",
+    "document.querySelector('#json-output').innerHTML.length > 0"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": [
+    {
+      "name": "data.json",
+      "url": "data:application/json;base64,ewogICJuYW1lIjogIlRlc3QgVXNlciIsCiAgImVtYWlsIjogInRlc3RAdGVzdC5jb20iLAogICJhZ2UiOiAyNSwKICAiYWRkcmVzcyI6IHsKICAgICJzdHJlZXQiOiAiMTIzIE1haW4gU3QiLAogICAgImNpdHkiOiAiVGVzdCBDaXR5IiwKICAgICJ6aXAiOiAiMTIzNDUiCiAgfQp9"
+    }
+  ]
+}
