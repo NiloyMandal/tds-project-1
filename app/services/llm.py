@@ -85,18 +85,34 @@ def generate_app(brief: str, checks: str) -> LLMResponse:
                 # Remove common LLM artifacts
                 if content.startswith('```json'):
                     content = content[7:]
+                if content.startswith('```'):
+                    content = content[3:]
                 if content.endswith('```'):
                     content = content[:-3]
                 
                 content = content.strip()
                 
-                # Extract JSON object
+                # Extract JSON object - find matching braces
                 if not content.startswith('{'):
-                    # Find the first { and last }
                     start_idx = content.find('{')
-                    end_idx = content.rfind('}')
-                    if start_idx != -1 and end_idx != -1:
-                        content = content[start_idx:end_idx + 1]
+                    if start_idx == -1:
+                        raise ValueError("No JSON object found in response")
+                    content = content[start_idx:]
+                
+                # Find the matching closing brace for the first opening brace
+                brace_count = 0
+                end_idx = -1
+                for i, char in enumerate(content):
+                    if char == '{':
+                        brace_count += 1
+                    elif char == '}':
+                        brace_count -= 1
+                        if brace_count == 0:
+                            end_idx = i
+                            break
+                
+                if end_idx != -1:
+                    content = content[:end_idx + 1]
                 
                 # Attempt to fix common JSON issues
                 import re
@@ -114,7 +130,7 @@ def generate_app(brief: str, checks: str) -> LLMResponse:
                 content = re.sub(r',(\s*[}\]])', r'\1', content)
                 
                 # Fix invalid escape sequences like \a, \b, etc (except valid ones like \n, \t, \r, \\, \")
-                content = re.sub(r'\\([^ntr"\\\/])', r'\\\\\\1', content)
+                content = re.sub(r'\\([^ntr"\\\/bfuU])', r'\\\\\\1', content)
                 
                 print(f"Cleaned JSON content: {content[:200]}...")
                 
