@@ -1,0 +1,20 @@
+{
+  "email": "22f1001861@ds.study.iitm.ac.in",
+  "secret": "11032003",
+  "task": "sum-of-sales-777",
+  "round": 1,
+  "nonce": "seed-777",
+  "brief": "Publish a single-page site that fetches data.csv from attachments, sums its sales column, sets the title to \"Sales Summary 777\", displays the total inside #total-sales, and loads Bootstrap 5 from jsdelivr.",
+  "checks": [
+    "document.title === `Sales Summary 777`",
+    "!!document.querySelector(\"link[href*='bootstrap']\")",
+    "Math.abs(parseFloat(document.querySelector(\"#total-sales\").textContent) - 600.75) < 0.01"
+  ],
+  "evaluation_url": "http://127.0.0.1:8000/_eval",
+  "attachments": [
+    {
+      "name": "data.csv",
+      "url": "data:text/csv;base64,cHJvZHVjdCxjYXRlZ29yeSxzYWxlcwpBLDEwLDEwMC41CkIsMTIsMjAwCkMsNSwzMDAuMjUK"
+    }
+  ]
+}
